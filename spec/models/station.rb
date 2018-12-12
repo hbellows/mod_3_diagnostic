@@ -19,11 +19,3 @@ describe Station do
     expection(station.access_times).to eq("Fifty percent of the time, it\'s open all the time" )
   end
 end
-
-# def initialize(station_data)
-#   @name = station_data[:station_name]
-#   @address = station_data[:street_address]
-#   @fuel_types = station_data[:fuel_type_code]
-#   @distance = station_data[:distance]
-#   @access_times = station_data[:access_days_time]
-# end

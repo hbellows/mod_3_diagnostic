@@ -14,9 +14,3 @@ class Station
     @access_times = station_data[:access_days_time]
   end
 end
-
-  # :station_name=>"UDR",
-  # :street_address=>"800 Acoma St",
-  # :fuel_type_code=>"ELEC",
-  # :distance=>0.31422,
-  # :access_days_time=>"24 hours daily"

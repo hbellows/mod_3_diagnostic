@@ -13,12 +13,6 @@ class StationSearchFacade
       Station.new(station)
     end
   end
-  
-  # :station_name=>"UDR",
-  # :street_address=>"800 Acoma St",
-  # :fuel_type_code=>"ELEC",
-  # :distance=>0.31422,
-  # :access_days_time=>"24 hours daily"
 
   private
   def nrel_service
