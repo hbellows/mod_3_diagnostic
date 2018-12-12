@@ -13,7 +13,7 @@ class StationSearchFacade
       Station.new(station)
     end
   end
-
+  
   # :station_name=>"UDR",
   # :street_address=>"800 Acoma St",
   # :fuel_type_code=>"ELEC",
@@ -21,7 +21,6 @@ class StationSearchFacade
   # :access_days_time=>"24 hours daily"
 
   private
-
   def nrel_service
     @nrel_service ||= NrelService.new
   end
