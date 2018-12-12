@@ -1,7 +1,7 @@
 class NrelService
 
   def get_stations(zip_code, radius = 6)
-    get_json("/api/alt-fuel-stations/v1/nearest.json?")
+    get_json("/api/alt-fuel-stations/v1/nearest.json?location=#{zip_code}&fuel_type=ELEC,LPG&limit=10")
   end
 
   private
