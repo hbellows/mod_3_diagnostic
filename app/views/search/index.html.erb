@@ -1,13 +1,13 @@
   <h2><%= @station_search.station_count %> Nearest Stations:</h2>
 
-
+<div>
   <% @station_search.stations.each do |station| %>
   <ul class="station">
-    <li class="name"><%= station.name %></li>
+    <li class="name"><strong><%= station.name %></li></strong>
     <li class="address"><%= station.address %></li>
     <li class="fuel-type"><%= station.fuel_types %></li>
     <li class="distance"><%= station.distance %></li>
     <li class="access-time"><%= station.access_times %></li>
-  </ul>
+    </ul>
   <% end %>
-  
+</div>
