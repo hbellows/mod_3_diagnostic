@@ -9,12 +9,12 @@ feature "User can visit root page" do
     end
   end
 
-  scenario 'and enters a zip code in the search box' do
+  context 'and enters a zip code in the search box' do
     it 'displays 10 closest stations and each station\'s details' do
       
       visit '/'
       
-      fill_in :q, with '80203'
+      fill_in :q, with: '80203'
 
       click_on 'Locate'
 
@@ -25,7 +25,7 @@ feature "User can visit root page" do
         expect(page).to have_css(".name")
         expect(page).to have_css(".address")
         expect(page).to have_css(".fuel-type")
-        expect(page).to have_css(".distance"
+        expect(page).to have_css(".distance")
         expect(page).to have_css(".access-time")
       end
     end
