@@ -19,7 +19,7 @@ feature "User can visit root page" do
       click_on 'Locate'
 
       expect(current_path).to eq('/search')
-      expect(page).to have_content('Nearest Stations')
+      expect(page).to have_content('10 Nearest Stations')
       expect(page).to have_css(".station", count:10)
       within(first(".station")) do
         expect(page).to have_css(".name")

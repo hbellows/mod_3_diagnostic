@@ -4,6 +4,10 @@ class StationSearchFacade
     @zip_code = zip_code
   end
 
+  def station_count
+    station_data[:fuel_stations].count
+  end
+
   def stations
     station_data[:fuel_stations].map do |station|
       Station.new(station)

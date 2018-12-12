@@ -1,6 +1,6 @@
-  <h2>Nearest Stations:</h2>
+  <h2><%= @station_search.station_count %> Nearest Stations:</h2>
 
-  
+
   <% @station_search.stations.each do |station| %>
   <ul class="station">
     <li class="name"><%= station.name %></li>
