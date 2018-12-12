@@ -5,7 +5,6 @@ class StationSearchFacade
   end
 
   def stations
-    binding.pry
     station_data[:fuel_stations].map do |station|
       Station.new(station)
     end
