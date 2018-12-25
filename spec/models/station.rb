@@ -12,10 +12,10 @@ describe Station do
     }
     station = Station.new(attriubtes)
 
-    expection(station.name).to eq('Awesome Station Name')
-    expection(station.address).to eq('123 Anytown, Anywhere, 80203' )
-    expection(station.fuel_types).to eq('ELEC, LPG')
-    expection(station.distance).to eq(12.34)
-    expection(station.access_times).to eq("Fifty percent of the time, it\'s open all the time" )
+    expect(station.name).to eq('Awesome Station Name')
+    expect(station.address).to eq('123 Anytown, Anywhere, 80203' )
+    expect(station.fuel_types).to eq('ELEC, LPG')
+    expect(station.distance).to eq(12.34)
+    expect(station.access_times).to eq("Fifty percent of the time, it\'s open all the time" )
   end
 end
